@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Link as ScrollLink } from "react-scroll";
 import Typical from "react-typical";
 import content from "../../content";
 
@@ -40,9 +41,11 @@ const Header = () => {
               className="inline-block"
             />
           </h1>
-          <button className="animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
-            {content.header.btnText}
-          </button>
+          <ScrollLink to="stack" smooth="true">
+            <button className="animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
+              {content.header.btnText}
+            </button>
+          </ScrollLink>
         </div>
       </div>
     </div>
