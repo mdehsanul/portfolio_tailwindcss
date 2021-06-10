@@ -1,6 +1,5 @@
 
-#live:
-https://portfolio-tailwindcss.web.app/ 
+live: https://portfolio-tailwindcss.web.app/ 
 
 Run
 
